@@ -1,0 +1,82 @@
+<svg id="Panel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1047 215.29">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 30px;
+        fill: #181818;
+      }
+
+      .cls-1, .cls-5 {
+        font-family: Arial-Black, Arial;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.06em;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.08em;
+      }
+
+      .cls-5 {
+        font-size: 135.26px;
+      }
+
+      .cls-12, .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        font-size: 47.66px;
+        font-family: Arial-BoldItalicMT, Arial;
+        font-style: italic;
+      }
+
+      .cls-12, .cls-6, .cls-9 {
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        letter-spacing: -0.04em;
+      }
+
+      .cls-8, .cls-9 {
+        fill: #20201f;
+      }
+
+      .cls-9 {
+        font-size: 12.47px;
+        font-family: MyriadPro-Bold, Myriad Pro;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-12 {
+        font-size: 82.74px;
+        font-family: Arial-BoldMT, Arial;
+      }
+    </style>
+  </defs>
+  <text id="kickoff" class="cls-1" transform="translate(159.47 205.24) scale(0.96 1)"><tspan xml:space="preserve">HOME 14:30  &gt;&gt;  </tspan><tspan class="cls-2" x="279.62" y="0">A</tspan><tspan class="cls-3" x="301.3" y="0">V</tspan><tspan x="323.61" y="0">ONHEAD </tspan><tspan class="cls-4" x="476.92" y="0">P</tspan><tspan x="496.04" y="0">ARK S6</tspan></text>
+  <text id="hometeam" class="cls-5" transform="translate(155.46 173.85) scale(0.52 1)">MANCHESTER UNITED</text>
+  <text class="cls-6" transform="translate(731.43 69.5) scale(0.96 1)">CHELSE<tspan class="cls-7" x="193.33" y="0">A</tspan><tspan x="225.98" y="0" xml:space="preserve"> FC</tspan></text>
+  <g id="Icon">
+    <path class="cls-8" d="M102.13,166.17l4.86,6.58,11-14.64-11.39-.79-5-10.36,3.15-10.57,8.19-4.52-.62-1.49L104,135l-11-3.54-5.7-9.63c.81-2.78,3-10.58,3-10.58l-18.49.22,3.42,9.9-9,9.43-11,3.54-7.73-4.7-.6,1.47,7.61,4.65,2.58,11-4.38,10.67-9.12.39,6.55,14.52L57,165.61l13.3,3.8,7.8,7.92.07,11.31,1.56-.26,0-11.07,9.23-7.91Zm-48-8,4.31-10.42,9.79,1.81,5.34,9.61-3.37,8.54-12.9-3.65ZM85.27,140l-11.75-.4-5.81-8,8.81-9.23,9.47.4,5.48,9.2Zm-15.63,8.79,4-7.62,11.64.42,4,7.19-5.76,9.73-8.53-.1Zm21,.66,9.69-1.39,4.84,10-3.36,6.57L89,167.79l-4.15-8.46Z"/>
+    <path class="cls-8" d="M79.49,94.1A54.15,54.15,0,0,0,43.4,107.81h0V93.06H25.16v51.71H43.3a36.38,36.38,0,0,1,72.38,0h18.07A54.39,54.39,0,0,0,79.49,94.1Z"/>
+    <path class="cls-8" d="M133.75,152.25H115.68a36.38,36.38,0,0,1-72.37,0H25.24a54.38,54.38,0,0,0,90.63,36.67h0v15H134V152.25Z"/>
+    <text class="cls-9" transform="translate(24.76 86.78) scale(0.99 1)"><tspan class="cls-10">N</tspan><tspan x="8.57" y="0">omads Uni</tspan><tspan class="cls-11" x="67.68" y="0">t</tspan><tspan x="72.19" y="0">ed AFC</tspan></text>
+  </g>
+  <text id="Date" class="cls-12" transform="translate(159.46 69.5) scale(0.64 1)">24</text>
+  <text class="cls-12" transform="translate(218.4 41.95) scale(0.37 0.58)">TH</text>
+</svg>
