@@ -1,16 +1,16 @@
-
 .cls-1 {
-    fill: url(#linear-gradient);
+    fill: #ed1c24;
 }
 
-.cls-2 {
-    fill: url(#linear-gradient-2);
+.cls-2,
+.cls-3 {
+    fill: #fff;
 }
 
 .cls-3 {
-    font-size: 36px;
-    fill: #231f20;
-    font-family: MyriadPro-Regular, Myriad Pro;
+    /* font-size: 36px; */
+    font-family: MyriadPro-Semibold, Myriad Pro;
+    font-weight: 600;
 }
 
 .cls-4 {
@@ -18,59 +18,20 @@
 }
 
 .cls-5 {
-    letter-spacing: -0.03em;
+    letter-spacing: -0.01em;
 }
 
 .cls-6 {
-    letter-spacing: 0em;
+    letter-spacing: -0.01em;
 }
 
-.cls-12,
-.cls-7,
-.cls-8 {
-    fill: #fff;
+.cls-7 {
+    letter-spacing: -0.01em;
 }
 
 .cls-8 {
-    font-size: 55px;
-}
-
-.cls-12,
-.cls-8 {
-    /* font-family: MyriadPro-Semibold, Myriad Pro; */
-    /* font-weight: 600; */
-}
-
-/* .cls-9 {
-    fill: #ed1c24;
-}
-
-.cls-10 {
-    fill: #27aae1;
-} */
-
-.cls-11 {
-    fill: #be1e2d;
-}
-
-.cls-12 {
-    font-size: 21px;
-}
-
-.cls-13 {
-    letter-spacing: -0.06em;
-}
-
-.cls-14 {
-    letter-spacing: 0em;
-}
-
-.cls-15 {
-    letter-spacing: -0.07em;
-}
-
-.cls-16 {
-    fill: none;
-    stroke: #fff;
-    stroke-miterlimit: 10;
+    font-size: 64px;
+    fill: #231f20;
+    font-family: MyriadPro-Regular, Myriad Pro;
+    font-weight: 900;
 }

@@ -2,9 +2,6 @@ import "./MatchweekPanel_5.css";
 import { images } from "../Base64Images";
 import { stringify } from "ajv";
 
-// import fc_twenty_11_logo from "../assets/FC-TWENTY-11.png";
-// import nomads_logo from "../assets/NOMADS-UNITED-AFC.png";
-
 function getTeamColour(teamName) {
   teamName = teamName.toLowerCase();
   var fill;
@@ -92,7 +89,7 @@ function getTeamColour(teamName) {
 function getLogo(teamName) {
   teamName = teamName.toLowerCase();
   var logo;
-  
+
   switch (true) {
     case teamName.includes("burnham"):
       logo = images.burnham;
@@ -173,27 +170,27 @@ function getLogo(teamName) {
       logo = "";
   }
 
-
   return logo;
 }
 
 function scaleText(type, str) {
   var html;
-  var fontSize = 36;
+  var fontSize = 32;
 
   if (str.length > 23) {
-    if (str.length > 32) {
+    if (str.length > 28) {
       str = str.substring(0, 30) + "..";
     }
-    fontSize -= 1.1 * str.length - 24;
+    fontSize -= 1.0 * str.length - 23;
   }
 
   html =
-    (type == "home") ? (
+    type == "home" ? (
       <text
         id="HomeTeam"
         className="cls-3 uppercase"
-        transform="translate(108.17 50.71)"
+        transform="translate(448.17 83.99)"
+        text-anchor="end"
         style={{ fontSize: stringify(fontSize) + "px" }}
       >
         {str}
@@ -202,8 +199,8 @@ function scaleText(type, str) {
       <text
         id="AwayTeam"
         className="cls-3 uppercase"
-        transform="translate(1260 50.71)"
-        text-anchor="end"
+        transform="translate(910 83.99)"
+        text-anchor="start"
         style={{ fontSize: stringify(fontSize) + "px" }}
       >
         {str}
@@ -213,147 +210,58 @@ function scaleText(type, str) {
   return html;
 }
 
-function MatchweekPanel({ home, away, time, date, location }) {
+function MatchweekPanel({ home, away, score }) {
   return (
-    <div className="w-9/12 flex mx-auto gap-10 py-[10px]">
+    <div className="w-12/12 flex mx-auto px-8">
       <svg
         id="Layer_3"
         data-name="Layer 3"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 1370.73 124.82"
+        viewBox="0 0 1370.23 130.55"
       >
-        <defs>
-          <linearGradient
-            id="linear-gradient"
-            x1={285.85}
-            y1={40.1}
-            x2={285.85}
-            y2={266.54}
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset={0} stopColor="#fff" />
-            <stop offset={1} stopColor="#808285" />
-          </linearGradient>
-          <linearGradient
-            id="linear-gradient-2"
-            x1={1085.01}
-            y1={40.1}
-            x2={1085.01}
-            y2={266.54}
-            xlinkHref="#linear-gradient"
-          />
-        </defs>
         <rect
-          id="HomeWhiteSquare"
+          id="Background"
           className="cls-1"
-          x={0.19}
-          y={0.5}
-          width={571.31}
-          height={87.54}
+          y={12.91}
+          width={1700.44}
+          height={110.73}
         />
-        <rect
-          id="AwayWhiteSquare"
+        <polygon
+          id="Score_Board"
+          data-name="Score Board"
           className="cls-2"
-          x={799.36}
-          y={0.5}
-          width={571.31}
-          height={87.54}
+          points="758.8 123.9 573.8 123.9 606.8 14.8 795.3 14.8 758.8 123.9"
+        />
+        <image
+          id="homelogo"
+          width={1000}
+          height={1000}
+          transform="translate(460.17 11.27) scale(0.12)"
+          xlinkHref={getLogo(home)}
+        />
+        <image
+          id="awaylogo"
+          width={1000}
+          height={1000}
+          transform="translate(790.06 11.27) scale(0.12)"
+          xlinkHref={getLogo(away)}
         />
         {scaleText("home", home)}
         {scaleText("away", away)}
-        {/* <text id="HomeTeam" className="cls-3 uppercase" transform="translate(108.17 50.71)">
-      {home}
-    </text>
-    <text id="AwayTeam" className="cls-3 uppercase" transform="translate(1260 50.71)" text-anchor="end">
-      {away}
-    </text> */}
-        <rect
-          id="HomeLogoSquare"
-          className="cls-7"
-          y={0.5}
-          width={74.67}
-          height={87.54}
-        />
-        <rect
-          id="AwayLogoSquare"
-          className="cls-7"
-          x={1296}
-          y={0.5}
-          width={74.67}
-          height={87.54}
-        />
-        <text id="Time" className="cls-8 font-black roboto-font" transform="translate(689.67 60.82)" text-anchor="middle">
-          {time}
+        {/* <text className="cls-3" transform="translate(244.02 83.99)">
+          {scaleText("home", home)}
         </text>
-        <rect
-          id="HomeColour"
-          className={`${getTeamColour(home)}`}
-          x={74.67}
-          y={77.71}
-          width={496.83}
-          height={10.33}
-        />
-        <rect
-          id="AwayColour"
-          className={`${getTeamColour(away)}`}
-          x={799.36}
-          y={77.71}
-          width={496.83}
-          height={10.33}
-        />
-        <image
-          id="AwayLogo"
-          width={1219}
-          height={1588}
-          transform="translate(1284.45 -19) scale(0.08)"
-          xlinkHref={getLogo(away)}
-        />
-        <image
-          id="HomeLogo"
-          width={1219}
-          height={1588}
-          transform="translate(-10 -20) scale(0.08)"
-          xlinkHref={getLogo(home)}
-        />
-        <rect
-          id="LocationSquare"
-          className="cls-11"
-          x={1012.15}
-          y={88.19}
-          width={358.52}
-          height={36.62}
-        />
-        <rect
-          id="DateSquare"
-          className="cls-11"
-          x={571.5}
-          y={88.19}
-          width={227.86}
-          height={36.62}
-        />
-        <text
-          id="Location"
-          className="cls-12"
-          transform="translate(1180.96 112.97)"
-          text-anchor="middle"
-        >
-          {location}
+        <text className="cls-3" transform="translate(977.61 83.99)">
+          {scaleText("away", away)}
+        </text> */}
+        <text id="score" className="cls-8" transform="translate(680.95 93.32)" text-anchor="middle">
+          {score}
         </text>
-        <text id="Date" className="cls-12" transform="translate(690.67 112.97) scale(1.05)" text-anchor="middle">
-          {date}
-        </text>
-        <rect
-          id="SqaureBorder"
-          className="cls-16"
-          x={0.63}
-          y={0.5}
-          width={1369.6}
-          height={87.54}
-        />
       </svg>
     </div>
   );
 }
 
 export default MatchweekPanel;
+
